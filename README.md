@@ -5,7 +5,7 @@ O projeto foi desenvolvido com foco em arquitetura limpa, segurança e escalabil
 
 ---
 
-## Funcionalidades
+##  Funcionalidades
 
 - Cadastro, atualização e exclusão de tarefas  
 - Autenticação e autorização via JWT  
@@ -18,7 +18,7 @@ O projeto foi desenvolvido com foco em arquitetura limpa, segurança e escalabil
 
 ---
 
-## Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 - **Java 17+**  
 - **Spring Boot** (Web, Data JPA, Security)  
