@@ -32,8 +32,44 @@ O projeto foi desenvolvido com foco em arquitetura limpa, segurança e escalabil
 
 ## Estrutura do Projeto
 
-src/main/java/com/seuprojeto ├── controller/        # Endpoints REST ├── business/          # Regras de negócio │   ├── dto/           # Data Transfer Objects │   └── mapper/        # Conversão Entity ↔ DTO ├── infrastructure/
-│   ├── entity/        # Entidades JPA │   ├── repository/    # Acesso ao banco de dados │   ├── security/      # Configuração JWT + filtros │   ├── client/        # Comunicação com serviço externo │   └── exceptions/    # Exceções customizadas └── resources/ └── application.properties
+src/main/java/com/guilherme/agendadortarefas
+│
+├── controller/
+│   └── TarefasController.java            # Endpoints REST
+│
+├── business/                             # Regras de negócio
+│   ├── TarefasService.java
+│   ├── dto/
+│   │   ├── TarefasDTO.java
+│   │   └── UsuarioDTO.java
+│   └── mapper/
+│       ├── TarefasConverter.java
+│       └── TarefaUpdateConverter.java
+│
+├── infrastructure/
+│   ├── client/
+│   │   └── UsuarioClient.java            # Comunicação com serviço externo
+│   │
+│   ├── entity/
+│   │   └── TarefasEntity.java            # Entidades JPA
+│   │
+│   ├── enums/
+│   │   └── StatusNotificacaoEnum.java
+│   │
+│   ├── exceptions/
+│   │   └── ResourceNotFoundException.java
+│   │
+│   ├── repository/
+│   │   └── TarefasRepository.java
+│   │
+│   └── security/
+│       ├── SecurityConfig.java
+│       ├── JwtUtil.java
+│       ├── JwtRequestFilter.java
+│       └── UserDetailsServiceImpl.java
+│
+└── resources/
+    └── application.properties
 
 ---
 
