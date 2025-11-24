@@ -32,12 +32,13 @@ O projeto foi desenvolvido com foco em arquitetura limpa, segurança e escalabil
 
 ## Estrutura do Projeto
 
+
 src/main/java/com/guilherme/agendadortarefas
 │
 ├── controller/
-│   └── TarefasController.java            # Endpoints REST
+│   └── TarefasController.java             # Endpoints REST
 │
-├── business/                             # Regras de negócio
+├── business/                              # Regras de negócio
 │   ├── TarefasService.java
 │   ├── dto/
 │   │   ├── TarefasDTO.java
@@ -48,10 +49,10 @@ src/main/java/com/guilherme/agendadortarefas
 │
 ├── infrastructure/
 │   ├── client/
-│   │   └── UsuarioClient.java            # Comunicação com serviço externo
+│   │   └── UsuarioClient.java             # Comunicação com serviço externo
 │   │
 │   ├── entity/
-│   │   └── TarefasEntity.java            # Entidades JPA
+│   │   └── TarefasEntity.java             # Entidades JPA
 │   │
 │   ├── enums/
 │   │   └── StatusNotificacaoEnum.java
