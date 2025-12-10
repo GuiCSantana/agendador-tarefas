@@ -8,8 +8,9 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableFeignClients
 public class AgendadorTarefasApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(AgendadorTarefasApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(AgendadorTarefasApplication.class, args);
 
+
+    }
 }
